@@ -37,7 +37,7 @@ class Geotools extends BaseGeotools
      *
      * @return Coordinate
      */
-    public function newCoordinate($coordinates, Ellipsoid $ellipsoid = null)
+    public function coordinate($coordinates, Ellipsoid $ellipsoid = null)
     {
         return new Coordinate($coordinates, $ellipsoid);
     }

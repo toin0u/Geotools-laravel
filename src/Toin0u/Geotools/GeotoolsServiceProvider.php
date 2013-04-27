@@ -18,8 +18,8 @@ use Illuminate\Support\ServiceProvider;
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class GeotoolsServiceProvider extends ServiceProvider {
-
+class GeotoolsServiceProvider extends ServiceProvider
+{
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -57,5 +57,4 @@ class GeotoolsServiceProvider extends ServiceProvider {
     {
         return array('geotools');
     }
-
 }

@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Facade;
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class GeotoolsFacade extends Facade {
-
+class GeotoolsFacade extends Facade
+{
     /**
     * Get the registered name of the component.
     *
@@ -28,5 +28,4 @@ class GeotoolsFacade extends Facade {
     protected static function getFacadeAccessor() {
         return 'geotools';
     }
-
 }
