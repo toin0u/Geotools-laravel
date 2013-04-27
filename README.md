@@ -14,7 +14,7 @@ Run these commands to install composer and its dependencies:
 
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require toin0u/geotools-laravel:dev-master
+$ php composer.phar require toin0u/geotools-laravel:@stable
 ```
 
 
