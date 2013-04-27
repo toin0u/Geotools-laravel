@@ -1,0 +1,35 @@
+{
+    "name": "toin0u/geotools-laravel",
+    "description": "Geo-related tools PHP 5.3 library for Laravel 4",
+    "keywords": ["laravel", "geotools", "geometry", "geocoder", "geocoding", "geoip", "bounds", "distance", "batch", "async"],
+    "homepage": "http://geotools-php.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antoine Corcy",
+            "email": "contact@sbin.dk",
+            "homepage": "http://sbin.dk",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@geotools-php.org",
+        "issues": "https://github.com/toin0u/Geotools/issues",
+        "source": "https://github.com/toin0u/Geotools"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.*@dev",
+        "toin0u/geotools": "~0.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Toin0u\\Geotools": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
