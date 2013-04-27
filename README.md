@@ -21,7 +21,7 @@ $ php composer.phar require toin0u/geotools-laravel:dev-master
 Usage
 -----
 
-Find the `providers` key in `app/config/app.php and register the Geotools Service Provider.
+Find the `providers` key in `app/config/app.php and register the **Geotools Service Provider**.
 
 ```php
 'providers' => array(
@@ -31,7 +31,7 @@ Find the `providers` key in `app/config/app.php and register the Geotools Servic
 )
 ```
 
-Find the `aliases` key in `app/config/app.php` and register The Geotools Facade.
+Find the `aliases` key in `app/config/app.php` and register the **Geotools Facade**.
 
 ```php
 'aliases' => array(

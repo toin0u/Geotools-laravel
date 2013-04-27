@@ -1,7 +1,11 @@
 CHANGELOG
 =========
 
-0.1.0 (xxxx-xx-xx)
+0.1.0 (2013-04-27)
 ------------------
 
-n/a
+* Added: doc
+* Changed newCoordinate() to coordinate()
+* Added: LICENSE file
+* Added: CHANGELOG file
+* Initial import
