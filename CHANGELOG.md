@@ -1,10 +1,10 @@
 CHANGELOG
 =========
 
-0.1.3 (xxxx-xx-xx)
+0.1.3 (2013-04-29)
 ------------------
 
-n/a
+* Fixed: composer dependencies
 
 
 0.1.2 (2013-04-29)
