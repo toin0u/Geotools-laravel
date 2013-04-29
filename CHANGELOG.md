@@ -1,10 +1,10 @@
 CHANGELOG
 =========
 
-0.1.2 (xxxx-xx-xx)
+0.1.2 (2013-04-29)
 ------------------
 
-n/a
+* Reverted: composer package stabilities
 
 
 0.1.1 (2013-04-29)
