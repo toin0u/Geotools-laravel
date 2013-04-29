@@ -4,7 +4,8 @@ CHANGELOG
 0.1.1 (xxxx-xx-xx)
 ------------------
 
-n/a
+* Fixed: composer dependencies
+* Fixed: doc advises to use @stable package
 
 
 0.1.0 (2013-04-27)
