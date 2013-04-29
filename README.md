@@ -101,7 +101,7 @@ printf("%s\n",$distance->flat()); // 659166.50038742 (meters)
 printf("%s\n",$distance->in('km')->haversine()); // 659.02190812846
 printf("%s\n",$distance->in('mi')->vincenty()); // 409.05330679648
 printf("%s\n",$distance->in('ft')->flat()); // 2162619.7519272
-``
+```
 
 [Read more...](http://geotools-php.org/#distance)
 
