@@ -14,8 +14,8 @@
     ],
     "support": {
         "email": "support@geotools-php.org",
-        "issues": "https://github.com/toin0u/Geotools/issues",
-        "source": "https://github.com/toin0u/Geotools"
+        "issues": "https://github.com/toin0u/Geotools-laravel/issues",
+        "source": "https://github.com/toin0u/Geotools-laravel"
     },
     "require": {
         "php": ">=5.3.0",

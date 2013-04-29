@@ -14,7 +14,7 @@ namespace Toin0u\Geotools;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Geootols service provider
+ * Geotools service provider
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
