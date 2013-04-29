@@ -48,10 +48,12 @@ Examples
 ## Coordinate & Ellipsoid ##
 
 ```php
+use Geotools\Coordinate\Ellipsoid;
+
 // from an \Geocoder\Result\ResultInterface instance within Airy ellipsoid
-$coordinate = Geotools::coordinate($geocoderResult, Geotools\Coordinate\Ellipsoid::createFromName(Ellipsoid::AIRY));
+$coordinate = Geotools::coordinate($geocoderResult, Ellipsoid::createFromName(Ellipsoid::AIRY));
 // or in an array of latitude/longitude coordinate within GRS 1980 ellipsoid
-$coordinate = Geotools::coordinate(array(48.8234055, 2.3072664), Geotools\Coordinate\Ellipsoid::createFromName(Ellipsoid::GRS_1980));
+$coordinate = Geotools::coordinate(array(48.8234055, 2.3072664), Ellipsoid::createFromName(Ellipsoid::GRS_1980));
 // or in latitude/longitude coordinate within WGS84 ellipsoid
 $coordinate = Geotools::coordinate('48.8234055, 2.3072664');
 // or in degrees minutes seconds coordinate within WGS84 ellipsoid
