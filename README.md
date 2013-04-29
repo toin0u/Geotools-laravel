@@ -179,5 +179,5 @@ Support
 License
 -------
 
-Geotools is released under the MIT License. See the bundled
+Geotools-laravel is released under the MIT License. See the bundled
 [LICENSE](https://github.com/toin0u/Geotools-laravel/blob/master/LICENSE) file for details.
