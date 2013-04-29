@@ -26,7 +26,7 @@ class Geotools extends BaseGeotools
      * Version.
      * @see http://semver.org/
      */
-    const VERSION = '0.1.2';
+    const VERSION = '0.1.3-dev';
 
 
     /**
