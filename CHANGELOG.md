@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-0.1.4-dev (xxxx-xx-xx)
+0.1.4 (xxxx-xx-xx)
 ----------------------
 
 n/a
