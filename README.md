@@ -10,12 +10,27 @@ Installation
 It can be found on [Packagist](https://packagist.org/packages/toin0u/geotools-laravel).
 The recommended way is through [composer](http://getcomposer.org).
 
-Run these commands to install composer and its dependencies:
-
+Install composer:
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require toin0u/geotools-laravel:@stable
 ```
+
+Create `composer.json`
+```json
+{
+    "require": {
+        "toin0u/geotools-laravel": "@stable"
+    },
+    "minimum-stability": "dev"
+}
+```
+
+Install dependencies:
+```bash
+$ php composer.phar install
+```
+
+You need to specify the `minimum-stability` to `dev` because **Laravel 4** is still in development.
 
 
 Usage
