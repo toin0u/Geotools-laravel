@@ -1,10 +1,14 @@
 CHANGELOG
 =========
 
-0.1.4 (xxxx-xx-xx)
+0.1.4 (2013-05-03)
 ----------------------
 
-n/a
+* Updated: use stable package if available
+* Fixed: typo in changelog
+* Updated: project name in licence
+* Fixed: doc
+* Fixed: typo and removed not used files
 
 
 0.1.3 (2013-04-29)
