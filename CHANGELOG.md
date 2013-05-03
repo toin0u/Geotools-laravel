@@ -1,8 +1,14 @@
 CHANGELOG
 =========
 
+0.1.5 (xxxx-xx-xx)
+------------------
+
+n/a
+
+
 0.1.4 (2013-05-03)
-----------------------
+------------------
 
 * Updated: use stable package if available
 * Fixed: typo in changelog
