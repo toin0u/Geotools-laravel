@@ -21,6 +21,7 @@ Create `composer.json`
     "require": {
         "toin0u/geotools-laravel": "@stable"
     },
+    "prefer-stable": true,
     "minimum-stability": "dev"
 }
 ```
