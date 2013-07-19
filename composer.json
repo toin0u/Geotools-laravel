@@ -1,35 +1,38 @@
 {
-    "name": "toin0u/geotools-laravel",
-    "description": "Geo-related tools PHP 5.3 library for Laravel 4",
-    "keywords": ["laravel", "geotools", "geometry", "geocoder", "geocoding", "geoip", "bounds", "distance", "batch", "async"],
-    "homepage": "http://geotools-php.org/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Antoine Corcy",
-            "email": "contact@sbin.dk",
-            "homepage": "http://sbin.dk",
-            "role": "Developer"
+    "name"        : "toin0u/geotools-laravel",
+    "description" : "Geo-related tools PHP 5.3 library for Laravel 4",
+    "keywords"    : ["laravel", "geotools", "geometry", "geocoder", "geocoding", "geoip", "bounds", "distance", "batch", "async"],
+    "homepage"    : "http://geotools-php.org/",
+    "license"     : "MIT",
+
+    "authors" : [{
+        "name"     : "Antoine Corcy",
+        "email"    : "contact@sbin.dk",
+        "homepage" : "http://sbin.dk",
+        "role"     : "Developer"
+    }],
+
+    "support" : {
+        "email"  : "support@geotools-php.org",
+        "issues" : "https://github.com/toin0u/Geotools-laravel/issues",
+        "source" : "https://github.com/toin0u/Geotools-laravel"
+    },
+
+    "require" : {
+        "php"                : ">=5.3.3",
+        "illuminate/support" : "~4.0",
+        "league/geotools"    : "~0.3"
+    },
+
+    "autoload" : {
+        "psr-0" : {
+            "Toin0u\\Geotools" : "src/"
         }
-    ],
-    "support": {
-        "email": "support@geotools-php.org",
-        "issues": "https://github.com/toin0u/Geotools-laravel/issues",
-        "source": "https://github.com/toin0u/Geotools-laravel"
     },
-    "require": {
-        "php": ">=5.3.3",
-        "illuminate/support": "~4.0",
-        "league/geotools": "~0.3"
-    },
-    "autoload": {
-        "psr-0": {
-            "Toin0u\\Geotools": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
+
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "0.2-dev"
         }
     }
 }
