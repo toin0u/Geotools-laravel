@@ -13,25 +13,8 @@ The recommended way is through [composer](http://getcomposer.org).
 Install composer:
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
+$ php composer.phar require toin0u/geotools-laravel:@stable
 ```
-
-Create `composer.json`
-```json
-{
-    "require": {
-        "toin0u/geotools-laravel": "@stable"
-    },
-    "prefer-stable": true,
-    "minimum-stability": "dev"
-}
-```
-
-Install dependencies:
-```bash
-$ php composer.phar install
-```
-
-You need to specify the `minimum-stability` to `dev` because **Laravel 4** is still in development.
 
 
 Usage
@@ -64,7 +47,7 @@ Examples
 ## Coordinate & Ellipsoid ##
 
 ```php
-use Geotools\Coordinate\Ellipsoid;
+use League\Geotools\Coordinate\Ellipsoid;
 
 // from an \Geocoder\Result\ResultInterface instance within Airy ellipsoid
 $coordinate = Geotools::coordinate($geocoderResult, Ellipsoid::createFromName(Ellipsoid::AIRY));
@@ -133,11 +116,11 @@ printf("%s\n", $point->initialCardinal()); // SSE (SouthSouthEast)
 printf("%d\n", $point->finalBearing()); // 160 (degrees)
 printf("%s\n", $point->finalCardinal()); // SSE (SouthSouthEast)
 
-$middlePoint = $point->middle(); // \Geotools\Coordinate\Coordinate
+$middlePoint = $point->middle(); // \League\Geotools\Coordinate\Coordinate
 printf("%s\n", $middlePoint->getLatitude()); // 46.070143125815
 printf("%s\n", $middlePoint->getLongitude()); // 3.9152401085931
 
-$destinationPoint = Geotools::point()->setFrom($coordA)->destination(180, 200000); // \Geotools\Coordinate\Coordinate
+$destinationPoint = Geotools::point()->setFrom($coordA)->destination(180, 200000); // \League\Geotools\Coordinate\Coordinate
 printf("%s\n", $destinationPoint->getLatitude()); // 47.026774650075
 printf("%s\n", $destinationPoint->getLongitude()); // 2.3072664
 ```
@@ -154,7 +137,7 @@ $encoded = Geotools::geohash()->encode($coordToGeohash, 4); // 12 is the default
 // encoded
 printf("%s\n", $encoded->getGeohash()); // spey
 // encoded bounding box
-$boundingBox = $encoded->getBoundingBox(); // array of \Geotools\Coordinate\CoordinateInterface
+$boundingBox = $encoded->getBoundingBox(); // array of \League\Geotools\Coordinate\CoordinateInterface
 $southWest   = $boundingBox[0];
 $northEast   = $boundingBox[1];
 printf("http://www.openstreetmap.org/?minlon=%s&minlat=%s&maxlon=%s&maxlat=%s&box=yes\n",
@@ -168,7 +151,7 @@ $decoded = Geotools::geohash()->decode('spey61y');
 printf("%s\n", $decoded->getCoordinate()->getLatitude()); // 43.296432495117
 printf("%s\n", $decoded->getCoordinate()->getLongitude()); // 5.3702545166016
 // decoded bounding box
-$boundingBox = $decoded->getBoundingBox(); //array of \Geotools\Coordinate\CoordinateInterface
+$boundingBox = $decoded->getBoundingBox(); //array of \League\Geotools\Coordinate\CoordinateInterface
 $southWest   = $boundingBox[0];
 $northEast   = $boundingBox[1];
 printf("http://www.openstreetmap.org/?minlon=%s&minlat=%s&maxlon=%s&maxlat=%s&box=yes\n",
