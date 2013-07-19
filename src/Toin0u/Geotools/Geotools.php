@@ -11,9 +11,9 @@
 
 namespace Toin0u\Geotools;
 
-use Geotools\Geotools as BaseGeotools;
-use Geotools\Coordinate\Coordinate;
-use Geotools\Coordinate\Ellipsoid;
+use League\Geotools\Geotools as BaseGeotools;
+use League\Geotools\Coordinate\Coordinate;
+use League\Geotools\Coordinate\Ellipsoid;
 
 /**
  * Geotools package for Laravel 4

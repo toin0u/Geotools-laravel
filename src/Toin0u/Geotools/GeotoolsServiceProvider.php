@@ -33,7 +33,7 @@ class GeotoolsServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot() {
-        $this->package('toin0u/geotools');
+        $this->package('league/geotools');
     }
 
     /**

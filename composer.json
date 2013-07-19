@@ -18,9 +18,9 @@
         "source": "https://github.com/toin0u/Geotools-laravel"
     },
     "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "4.0.*@dev",
-        "toin0u/geotools": "@stable"
+        "php": ">=5.3.3",
+        "illuminate/support": "~4.0",
+        "league/geotools": "~0.3"
     },
     "autoload": {
         "psr-0": {
