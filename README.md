@@ -10,10 +10,21 @@ Installation
 It can be found on [Packagist](https://packagist.org/packages/toin0u/geotools-laravel).
 The recommended way is through [composer](http://getcomposer.org).
 
-Install composer:
+Edit `compose.json` and add:
+
+```json
+{
+    "require": {
+        "toin0u/geotools-laravel": "~0.2"
+    }
+}
+```
+
+And install dependecies:
+
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require toin0u/geotools-laravel:@stable
+$ php composer.phar install
 ```
 
 
