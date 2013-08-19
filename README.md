@@ -3,6 +3,9 @@ Geotools for Lavarel 4
 
 This package allows you to use [**Geotools**](http://geotools-php.org) in [**Laravel 4**](http://four.laravel.com/).
 
+[![Latest Stable Version](https://poser.pugx.org/toin0u/Geotools-laravel/v/stable.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
+[![Total Downloads](https://poser.pugx.org/toin0u/Geotools-laravel/downloads.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
+
 
 Installation
 ------------
