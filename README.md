@@ -5,8 +5,8 @@ This package allows you to use [**Geotools**](http://geotools-php.org) in [**Lar
 
 [![Latest Stable Version](https://poser.pugx.org/toin0u/Geotools-laravel/v/stable.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
 [![Total Downloads](https://poser.pugx.org/toin0u/Geotools-laravel/downloads.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
-[![Latest Stable Version](https://poser.pugx.org/toin0u/Geotools-laravel/v/stable.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
-[![Total Downloads](https://poser.pugx.org/toin0u/Geotools-laravel/downloads.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
+[![Build Status](https://secure.travis-ci.org/toin0u/Geotools-laravel.png)](http://travis-ci.org/toin0u/Geotools-laravel)
+[![Coverage Status](https://coveralls.io/repos/toin0u/Geotools-laravel/badge.png)](https://coveralls.io/r/toin0u/Geotools-laravel)
 
 
 Installation
