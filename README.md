@@ -7,6 +7,7 @@ This package allows you to use [**Geotools**](http://geotools-php.org) in [**Lar
 [![Total Downloads](https://poser.pugx.org/toin0u/Geotools-laravel/downloads.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
 [![Build Status](https://secure.travis-ci.org/toin0u/Geotools-laravel.png)](http://travis-ci.org/toin0u/Geotools-laravel)
 [![Coverage Status](https://coveralls.io/repos/toin0u/Geotools-laravel/badge.png)](https://coveralls.io/r/toin0u/Geotools-laravel)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b232ab0f-2159-4d82-9a53-eb9370ede088/mini.png)](https://insight.sensiolabs.com/projects/b232ab0f-2159-4d82-9a53-eb9370ede088)
 
 
 Installation
