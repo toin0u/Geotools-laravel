@@ -21,7 +21,7 @@ Edit `compose.json` and add:
 ```json
 {
     "require": {
-        "toin0u/geotools-laravel": "~0.2"
+        "toin0u/geotools-laravel": "0.2.*"
     }
 }
 ```
