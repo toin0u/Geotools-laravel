@@ -42,21 +42,21 @@ Usage
 Find the `providers` key in `config/app.php` and register the **Geotools Service Provider**.
 
 ```php
-'providers' => array(
+'providers' => [
     // ...
 
     'Toin0u\Geotools\GeotoolsServiceProvider',
-)
+]
 ```
 
 Find the `aliases` key in `config/app.php` and register the **Geotools Facade**.
 
 ```php
-'aliases' => array(
+'aliases' => [
     // ...
 
     'Geotools' => 'Toin0u\Geotools\Facade\Geotools',
-)
+]
 ```
 
 
@@ -72,7 +72,7 @@ use Toin0u\Geotools\Facade\Geotools;
 // from an \Geocoder\Result\ResultInterface instance within Airy ellipsoid
 $coordinate = Geotools::coordinate($geocoderResult, Ellipsoid::createFromName(Ellipsoid::AIRY));
 // or in an array of latitude/longitude coordinate within GRS 1980 ellipsoid
-$coordinate = Geotools::coordinate(array(48.8234055, 2.3072664), Ellipsoid::createFromName(Ellipsoid::GRS_1980));
+$coordinate = Geotools::coordinate([48.8234055, 2.3072664], Ellipsoid::createFromName(Ellipsoid::GRS_1980));
 // or in latitude/longitude coordinate within WGS84 ellipsoid
 $coordinate = Geotools::coordinate('48.8234055, 2.3072664');
 // or in degrees minutes seconds coordinate within WGS84 ellipsoid
@@ -116,8 +116,8 @@ printf("%s\n", $converted->toUTM()); // 17T 589138 4477813 (alias)
 ```php
 // ...
 
-$coordA   = Geotools::coordinate(array(48.8234055, 2.3072664));
-$coordB   = Geotools::coordinate(array(43.296482, 5.36978));
+$coordA   = Geotools::coordinate([48.8234055, 2.3072664]);
+$coordB   = Geotools::coordinate([43.296482, 5.36978]);
 $distance = Geotools::distance()->setFrom($coordA)->setTo($coordB);
 
 printf("%s\n",$distance->flat()); // 659166.50038742 (meters)
@@ -133,8 +133,8 @@ printf("%s\n",$distance->in('ft')->flat()); // 2162619.7519272
 ```php
 // ...
 
-$coordA   = Geotools::coordinate(array(48.8234055, 2.3072664));
-$coordB   = Geotools::coordinate(array(43.296482, 5.36978));
+$coordA   = Geotools::coordinate([48.8234055, 2.3072664]$);
+$coordB   = Geotools::coordinate([43.296482, 5.36978]$);
 $point    =  Geotools::point()->setFrom($coordA)->setTo($coordB);
 
 printf("%d\n", $point->initialBearing()); // 157 (degrees)
