@@ -1,7 +1,7 @@
-Geotools for Lavarel 4
-======================
+Geotools for Lavarel 4 & 5
+==========================
 
-This package allows you to use [**Geotools**](http://geotools-php.org) in [**Laravel 4**](http://four.laravel.com/).
+This package allows you to use [**Geotools**](http://geotools-php.org) in [**Laravel**](http://laravel.com/).
 
 [![Latest Stable Version](https://poser.pugx.org/toin0u/Geotools-laravel/v/stable.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
 [![Total Downloads](https://poser.pugx.org/toin0u/Geotools-laravel/downloads.png)](https://packagist.org/packages/toin0u/Geotools-laravel)
@@ -21,10 +21,12 @@ Edit `compose.json` and add:
 ```json
 {
     "require": {
-        "toin0u/geotools-laravel": "0.2.*"
+        "toin0u/geotools-laravel": "0.3.*"
     }
 }
 ```
+
+**Please note**: use version `0.2.*` if you use **Laravel 4**.
 
 And install dependecies:
 
@@ -37,7 +39,7 @@ $ php composer.phar install
 Usage
 -----
 
-Find the `providers` key in `app/config/app.php` and register the **Geotools Service Provider**.
+Find the `providers` key in `config/app.php` and register the **Geotools Service Provider**.
 
 ```php
 'providers' => array(
@@ -47,13 +49,13 @@ Find the `providers` key in `app/config/app.php` and register the **Geotools Ser
 )
 ```
 
-Find the `aliases` key in `app/config/app.php` and register the **Geotools Facade**.
+Find the `aliases` key in `config/app.php` and register the **Geotools Facade**.
 
 ```php
 'aliases' => array(
     // ...
 
-    'Geotools' => 'Toin0u\Geotools\GeotoolsFacade',
+    'Geotools' => 'Toin0u\Geotools\Facade\Geotools',
 )
 ```
 
@@ -65,6 +67,7 @@ Examples
 
 ```php
 use League\Geotools\Coordinate\Ellipsoid;
+use Toin0u\Geotools\Facade\Geotools;
 
 // from an \Geocoder\Result\ResultInterface instance within Airy ellipsoid
 $coordinate = Geotools::coordinate($geocoderResult, Ellipsoid::createFromName(Ellipsoid::AIRY));
@@ -91,6 +94,8 @@ printf("Mean radius: %F\n", $coordinate->getEllipsoid()->getArithmeticMeanRadius
 ## Convert ##
 
 ```php
+// ...
+
 $coordinate = Geotools::coordinate('40.446195, -79.948862');
 $converted  = Geotools::convert($coordinate);
 // convert to decimal degrees without and with format string
@@ -109,6 +114,8 @@ printf("%s\n", $converted->toUTM()); // 17T 589138 4477813 (alias)
 ## Distance ##
 
 ```php
+// ...
+
 $coordA   = Geotools::coordinate(array(48.8234055, 2.3072664));
 $coordB   = Geotools::coordinate(array(43.296482, 5.36978));
 $distance = Geotools::distance()->setFrom($coordA)->setTo($coordB);
@@ -124,6 +131,8 @@ printf("%s\n",$distance->in('ft')->flat()); // 2162619.7519272
 ## Point ##
 
 ```php
+// ...
+
 $coordA   = Geotools::coordinate(array(48.8234055, 2.3072664));
 $coordB   = Geotools::coordinate(array(43.296482, 5.36978));
 $point    =  Geotools::point()->setFrom($coordA)->setTo($coordB);
@@ -147,6 +156,8 @@ printf("%s\n", $destinationPoint->getLongitude()); // 2.3072664
 ## Geohash ##
 
 ```php
+// ...
+
 $coordToGeohash = Geotools::coordinate('43.296482, 5.36978');
 
 // encoding

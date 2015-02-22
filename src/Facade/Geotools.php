@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Toin0u\Geotools;
+namespace Toin0u\Geotools\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -18,14 +18,15 @@ use Illuminate\Support\Facades\Facade;
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class GeotoolsFacade extends Facade
+class Geotools extends Facade
 {
     /**
     * Get the registered name of the component.
     *
     * @return string
     */
-    protected static function getFacadeAccessor() {
+    protected static function getFacadeAccessor()
+    {
         return 'geotools';
     }
 }

@@ -11,7 +11,7 @@
     bootstrap="tests/bootstrap.php"
     >
     <testsuites>
-        <testsuite name="Geotools library for Laravel4 Test Suite">
+        <testsuite name="Geotools library for Laravel Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>

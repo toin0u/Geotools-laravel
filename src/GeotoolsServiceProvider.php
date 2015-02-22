@@ -32,8 +32,8 @@ class GeotoolsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot() {
-        $this->package('league/geotools');
+    public function boot()
+    {
     }
 
     /**
@@ -43,7 +43,7 @@ class GeotoolsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['geotools'] = $this->app->share(function() {
+        $this->app->singleton('geotools', function() {
             return new Geotools;
         });
     }
@@ -55,6 +55,8 @@ class GeotoolsServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('geotools');
+        return [
+            'geotools',
+        ];
     }
 }

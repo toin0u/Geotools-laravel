@@ -30,8 +30,8 @@
     },
 
     "autoload" : {
-        "psr-0" : {
-            "Toin0u\\Geotools" : "src/"
+        "psr-4" : {
+            "Toin0u\\Geotools\\" : "src/"
         }
     },
 
