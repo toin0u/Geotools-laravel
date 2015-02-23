@@ -1,10 +1,12 @@
 CHANGELOG
 =========
 
-0.2.1 (xxxx-xx-xx)
+1.0.0 (2015-02-23)
 ------------------
 
-n/a
+* Added: compatibility to Laravel 5
+* Dropped: PHP 5.3
+* Updated: doc
 
 0.2.0 (2013-07-19)
 ------------------
