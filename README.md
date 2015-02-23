@@ -18,15 +18,16 @@ The recommended way is through [composer](http://getcomposer.org).
 
 Edit `compose.json` and add:
 
+**Please note**: use version `0.2.*` if you use **Laravel 4**.
+The document is [here](https://github.com/toin0u/Geotools-laravel/blob/7ad681731a5fb8ab9d85783638fd25dae28533a6/README.md).
+
 ```json
 {
     "require": {
-        "toin0u/geotools-laravel": "0.3.*"
+        "toin0u/geotools-laravel": "~1.0"
     }
 }
 ```
-
-**Please note**: use version `0.2.*` if you use **Laravel 4**.
 
 And install dependecies:
 
