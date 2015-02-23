@@ -25,7 +25,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases()
     {
         return array(
-            'Geotools' => 'Toin0u\Geotools\GeotoolsFacade',
+            'Geotools' => 'Toin0u\Geotools\Facade\Geotools',
         );
     }
 }

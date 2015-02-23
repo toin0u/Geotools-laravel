@@ -16,7 +16,7 @@ use League\Geotools\Coordinate\Coordinate;
 use League\Geotools\Coordinate\Ellipsoid;
 
 /**
- * Geotools package for Laravel 4
+ * Geotools package for Laravel
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
