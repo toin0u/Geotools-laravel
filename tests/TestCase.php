@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Geotools\Tests;
+namespace Toin0u\Tests\Geotools;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>
@@ -18,14 +18,14 @@ class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders()
     {
-        return array(
+        return [
             'Toin0u\Geotools\GeotoolsServiceProvider',
-        );
+        ];
     }
     protected function getPackageAliases()
     {
-        return array(
+        return [
             'Geotools' => 'Toin0u\Geotools\Facade\Geotools',
-        );
+        ];
     }
 }

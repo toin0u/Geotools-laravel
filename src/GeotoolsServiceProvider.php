@@ -11,31 +11,13 @@
 
 namespace Toin0u\Geotools;
 
-use Illuminate\Support\ServiceProvider;
-
 /**
  * Geotools service provider
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class GeotoolsServiceProvider extends ServiceProvider
+class GeotoolsServiceProvider extends \Illuminate\Support\ServiceProvider
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
-    /**
-     * Bootstrap the application events.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-    }
-
     /**
      * Register the service provider.
      *

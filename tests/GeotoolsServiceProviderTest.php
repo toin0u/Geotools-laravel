@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Geotools\Tests;
+namespace Toin0u\Tests\Geotools;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>

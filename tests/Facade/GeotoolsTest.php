@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Geotools\Tests;
+namespace Toin0u\Tests\Geotools\Facade;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class GeotoolsFacadeTest extends TestCase
+class GeotoolsTest extends \Toin0u\Tests\Geotools\TestCase
 {
     public function testCoordinate()
     {

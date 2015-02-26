@@ -11,14 +11,12 @@
 
 namespace Toin0u\Geotools\Facade;
 
-use Illuminate\Support\Facades\Facade;
-
 /**
  * Facade for Geotools
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class Geotools extends Facade
+class Geotools extends \Illuminate\Support\Facades\Facade
 {
     /**
     * Get the registered name of the component.
