@@ -26,14 +26,14 @@ class GeotoolsTest extends \Toin0u\Tests\Geotools\TestCase
         $this->assertInstanceOf('League\\Geotools\\Distance\\Distance', \Geotools::Distance());
     }
 
-    public function testPoint()
+    public function testVertex()
     {
-        $this->assertInstanceOf('League\\Geotools\\Point\\Point', \Geotools::Point());
+        $this->assertInstanceOf('League\\Geotools\\Vertex\\Vertex', \Geotools::Vertex());
     }
 
     public function testBatch()
     {
-        $geocoder = new \Geocoder\Geocoder;
+        $geocoder = new \Geocoder\ProviderAggregator();
 
         $this->assertInstanceOf('League\\Geotools\\Batch\\Batch', \Geotools::Batch($geocoder));
     }
