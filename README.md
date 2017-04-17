@@ -46,7 +46,8 @@ Find the `providers` key in `config/app.php` and register the **Geotools Service
 'providers' => [
     // ...
 
-    'Toin0u\Geotools\GeotoolsServiceProvider',
+    'Toin0u\Geotools\GeotoolsServiceProvider', // Laravel version < 5.1
+    Toin0u\Geotools\GeotoolsServiceProvider::class, // Laravel version 5.1+
 ]
 ```
 
@@ -56,7 +57,8 @@ Find the `aliases` key in `config/app.php` and register the **Geotools Facade**.
 'aliases' => [
     // ...
 
-    'Geotools' => 'Toin0u\Geotools\Facade\Geotools',
+    'Geotools' => 'Toin0u\Geotools\Facade\Geotools', // Laravel version < 5.1
+    'Geotools' => Toin0u\Geotools\Facade\Geotools::class, // Laravel version 5.1+
 ]
 ```
 
